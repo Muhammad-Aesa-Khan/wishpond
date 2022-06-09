@@ -1,0 +1,29 @@
+.div-row-border
+{
+    border-bottom: 3px solid rgb(142, 200, 219) !important;
+}
+
+.div-row-border:hover
+{
+    border-bottom: 3px solid blue !important;
+}
+.pseudo-div {
+    position: relative;
+    background-color: white;
+    z-index: 3;
+    padding: 5px 0px;
+    border: 1px solid rgba(182, 165, 165, 0.37);
+}
+.pseudo-div::before{
+    content: "";
+    background: white;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: -9px;
+    transform: rotate(45deg);
+    top: 19px;
+    z-index: -1;
+    border-left: 1px solid rgba(182, 165, 165, 0.37);
+    border-bottom: 1px solid rgba(182, 165, 165, 0.37);
+}
